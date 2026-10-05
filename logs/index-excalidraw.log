@@ -1,0 +1,15 @@
+┌  Initializing CodeGraph
+│
+◆  Initialized in /Users/jmb-mac/Documents/Projects/code-graph-scaling/repos/excalidraw
+│
+Scanning files...
+Parsing code...
+Resolving refs...
+Linking dynamic dispatch...
+│
+◆  Indexed 716 files
+│
+●  11,949 nodes, 53,661 edges in 701ms
+│
+└  Done
+

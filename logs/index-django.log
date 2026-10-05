@@ -1,0 +1,15 @@
+┌  Initializing CodeGraph
+│
+◆  Initialized in /Users/jmb-mac/Documents/Projects/code-graph-scaling/repos/django
+│
+Scanning files...
+Parsing code...
+Resolving refs...
+Linking dynamic dispatch...
+│
+◆  Indexed 3,019 files
+│
+●  62,384 nodes, 202,940 edges in 2.5s
+│
+└  Done
+

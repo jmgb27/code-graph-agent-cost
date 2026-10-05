@@ -1,0 +1,32 @@
+{
+  "flask": {
+    "lookup": "Find every place the MAX_CONTENT_LENGTH config value is defaulted, read, or enforced, in source and tests.",
+    "trace": "Trace a request from Flask.wsgi_app to the response: context push, URL matching, before_request hooks, view dispatch, after_request hooks and teardown. List the functions in call order.",
+    "plan": "Plan adding a per-blueprint max_content_length override that wins over the app-wide MAX_CONTENT_LENGTH. List every file and function to change, and the tests to add."
+  },
+  "hono": {
+    "lookup": "Find every place the `strict` option of `new Hono()` is defaulted, read, or changes routing behaviour.",
+    "trace": "Trace a request on Cloudflare Workers from app.fetch to the returned Response: which router is the default, how SmartRouter picks a router, how middleware is composed, and where the 404 and error handlers run.",
+    "plan": "Plan adding a per-route request timeout option to app.get/app.post/etc. that returns 504 when the handler exceeds it, working in every runtime adapter. List every file and function to change, and the tests to add."
+  },
+  "excalidraw": {
+    "lookup": "Find every place an element's frameId is written (set, cleared or changed), across packages/ and excalidraw-app/.",
+    "trace": "Trace pasting an image from the clipboard: from the paste event to the image element being created, the file data stored in BinaryFiles, saved for collaboration, and rendered on the canvas.",
+    "plan": "Plan adding a new per-element boolean property that must survive local storage, .excalidraw export and restore, collaboration sync and reconciliation, undo/redo, and a toggle in the properties panel. List every file and function to change."
+  },
+  "django": {
+    "lookup": "Find every place DEFAULT_AUTO_FIELD is defaulted, read, overridden per app, or validated, including system checks and warnings.",
+    "trace": "Trace Model.objects.filter(name__icontains=\"x\") from the QuerySet call to the SQL for PostgreSQL: Query.build_filter, lookup resolution, the IContains lookup and the SQL compiler.",
+    "plan": "Plan adding a per-database QUERY_TIMEOUT option in DATABASES that every built-in backend (PostgreSQL, MySQL, SQLite, Oracle) honours, with validation and tests. List every file and function to change."
+  },
+  "sentry": {
+    "lookup": "Find every place the project option sentry:scrub_ip_address and its organization-level counterpart are read, written, serialized, sent to Relay, or shown in the UI.",
+    "trace": "Trace an error event from the ingest Kafka consumer to a stored issue: the consumer, save_event and EventManager.save, grouping hash calculation, and Group creation or assignment.",
+    "plan": "Plan adding a per-project cap on new issues created per hour, enforced at ingestion: option registration, API serializer and endpoint validation, the frontend settings form, and enforcement in the event pipeline. List every file and function to change."
+  },
+  "vscode": {
+    "lookup": "Find every place the editor.formatOnSave and editor.formatOnSaveMode settings are registered, read, or change behaviour. Ignore extensions/copilot and test fixtures.",
+    "trace": "Trace the Format Document command from its registration to the extension host: the command or action, how the formatter provider is chosen, the RPC to the extension host DocumentFormattingEditProvider, and how the returned edits are applied to the model.",
+    "plan": "Plan adding a per-language setting editor.formatOnSaveTimeout that bounds how long format-on-save waits: setting registration, the save participant, cancellation passed to the extension host, the settings UI, and tests. List every file and function to change."
+  }
+}

@@ -1,0 +1,15 @@
+┌  Initializing CodeGraph
+│
+◆  Initialized in /Users/jmb-mac/Documents/Projects/code-graph-scaling/repos/vscode
+│
+Scanning files...
+Parsing code...
+Resolving refs...
+Linking dynamic dispatch...
+│
+◆  Indexed 14,776 files
+│
+●  418,038 nodes, 2,045,901 edges in 17.4s
+│
+└  Done
+

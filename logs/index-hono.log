@@ -1,0 +1,15 @@
+┌  Initializing CodeGraph
+│
+◆  Initialized in /Users/jmb-mac/Documents/Projects/code-graph-scaling/repos/hono
+│
+Scanning files...
+Parsing code...
+Resolving refs...
+Linking dynamic dispatch...
+│
+◆  Indexed 466 files
+│
+●  5,027 nodes, 22,020 edges in 639ms
+│
+└  Done
+

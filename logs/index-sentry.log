@@ -1,0 +1,15 @@
+┌  Initializing CodeGraph
+│
+◆  Initialized in /Users/jmb-mac/Documents/Projects/code-graph-scaling/repos/sentry
+│
+Scanning files...
+Parsing code...
+Resolving refs...
+Linking dynamic dispatch...
+│
+◆  Indexed 17,823 files
+│
+●  316,666 nodes, 1,029,821 edges in 12.5s
+│
+└  Done
+
